@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />       <!-- 讓網頁漂亮一點的CSS Style -->
+    <title>Class3 PHP form</title>
+</head>
+<body>
+   <form action="post" action="check.php">
+       帳號: <input type="text" name="id">
+       密碼: <input type="password" name="pwd">
+       隱藏: <input type="hidden" name="word" value="php">
+       <br>
+       <textarea name="blog" id="" cols="30" rows="10"></textarea><br><br>
+       
+       <h3>input[type="checkbox" name="pizza"]*3</h3>
+       <br>
+       
+       Seafood<input type="checkbox" name="pizza" value="pizza01">
+       <br>
+       Hawaii<input type="checkbox" name="pizza" value="pizza02">
+       <br>
+       Chicken<input type="checkbox" name="pizza" value="pizza03">
+       <br>
+       
+       <h3><font color="red">Blood type:</font></h3>
+       <input type="radio" name="blood" value="A" checked>A
+       <input type="radio" name="blood" value="B">B
+       <input type="radio" name="blood" value="O">O
+       <input type="radio" name="blood" value="AB">AB
+       <br>
+       都屬於 blood 下面 所以只能單選, User "checked" as default value
+       <br><br>
+       
+       <select name="course" id="" size=1>
+           <option value="CS" selected>CS</option>
+           <option value="EE">EE</option>
+           <option value="Fin">Fin</option>
+           <option value="CH">CH</option>
+       </select>
+       <br><br>
+       
+       
+       <select name="movie" id="" size=3 multiple>
+           <option value="movie01">Superman</option>
+           <option value="movie02">X man</option>
+           <option value="movie03">Spider man</option>
+       </select>
+       <br><br>
+       
+       <input type="submit" value="Value will display on the button">
+       
+   </form>
+    
+</body>
+</html>
