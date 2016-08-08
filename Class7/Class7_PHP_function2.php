@@ -8,10 +8,10 @@
 
     <?php
 
-    function discountBooks($prices) {        
+    function discountBooks($prices, $rate) {        
         $books = array();
         foreach($prices as $name => $price) {
-            $books[$name] = $price * 0.8;
+            $books[$name] = $price * $rate;
         }
         return $books;
     }
@@ -22,7 +22,7 @@
         "Secret" => 200
     );
     
-    print_r(discountBooks($priceBooks));
+    print_r(discountBooks($priceBooks, 0.8));
 
     ?>
     
